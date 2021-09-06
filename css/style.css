@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+:root{
+    --theme-color: rgb(211, 168, 253);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: rgb(237, 237, 252);
+  font-family: 'Baloo Bhai 2', cursive;
+  max-width: 1600px;
+  min-width: 300px;
+}
+
+/* Header CSS */
+header {
+  background-color: var(--theme-color);
+  display: flex;
+  flex-wrap: wrap;
+  /* min-width: 300px; */
+  /* justify-content: space-between; */
+}
+
+header .profile-pic img {
+  display: inline;
+  width: 11rem;
+  margin: 3rem 3rem 3rem 7rem;
+  border: 2px solid black;
+  border-radius: 100px;
+}
+#details {
+  margin: 90px 0% 0px 10vw;
+}
+
+#details li {
+  list-style: none;
+  font-weight: 400em;
+  margin-bottom: 1vh;
+}
+#name {
+  font-size: 2em;
+  color: rgb(187, 26, 26);
+}
+
+/* Css for container which is containg skills and projects */
+.container {
+  margin: 0 5vw 0 5vw;
+  border: 0.2rem solid black;
+  box-sizing: border-box;
+  /* min-width: 300px; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.title {
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(221, 35, 35);
+}
+/* Css for skill container (parent container of skills) */
+.skill-container {
+  background-color: rgb(167, 161, 161);
+  /* margin: 5vh 0 0 2vw; */
+}
+
+.skill {
+  margin: 1vh 1vw 1vw 1vw;
+  padding: 1vh 1vw 1vw 1vw;
+
+  /* border-bottom: 0.5vh solid black; */
+}
+.skill:hover {
+  /* padding: 3px; */
+  /* transform: scale(1.2); */
+  /* transform: unset; */
+  box-shadow: 1px 3px 5px 2px black;
+  background-color: aliceblue;
+  z-index: 2;
+}
+/* .skill-name{
+    display: inline-block;
+} */
+.line{
+    display: inline-block;
+}
+.skill-rate:hover{
+    /* z-index: 4; */
+    font-size: 2em;
+}
+/* css for skill line */
+.c-skill {
+  width: 70%;
+  height: 1vh;
+  background-color: blue;
+}
+.java-skill {
+  width: 80%;
+  height: 1vh;
+  background-color: blue;
+  display: inline-block;
+}
+.python-skill {
+  width: 60%;
+  height: 1vh;
+  background-color: blue;
+}
+.sql-skill {
+  width: 70%;
+  height: 1vh;
+  background-color: blue;
+}
+.vb-skill {
+  width: 80%;
+  height: 1vh;
+  background-color: blue;
+}
+.html-skill {
+  width: 70%;
+  height: 1vh;
+  background-color: blue;
+}
+.css-skill {
+  width: 70%;
+  height: 1vh;
+  background-color: blue;
+}
+.js-skill {
+  width: 50%;
+  height: 1vh;
+  background-color: blue;
+}
+.php-skill {
+  width: 60%;
+  height: 1vh;
+  background-color: blue;
+}
+
+/* CSS for project container (parent container for project) */
+.project-container{
+    background-color: rgb(181, 240, 222);;
+}
+.title{
+    /* border-bottom: 0.2em solid rgb(151, 151, 151); */
+    text-decoration: underline;
+}
+
+.project {
+  margin: 2vh 2vw 2vw 2vw;
+  border-bottom: 0.5vh solid black;
+  max-height: 500px;
+  overflow: auto;
+}
+.project:hover {
+  padding: 3px;
+  transform: scale(1.2);
+  box-shadow: 1px 3px 5px 2px black;
+  background-color: aliceblue;
+  z-index: 2;
+}
+.project-name{
+    color: rgb(91, 5, 177);
+}
+.sub-title {
+  font-weight: 600;
+}
+/* CSS for footer */
+footer {
+  background-color:  var(--theme-color);
+  text-align: center;
+  line-height: 3vh;
+  font-size: 0.9em;
+  min-width: 300px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 825px) {
+  .profile-pic {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  header .profile-pic img {
+    width: 5rem;
+    margin: 3rem 0rem 0rem 0rem;
+  }
+  
+
+  #details {
+    display: inline;
+    width: 100%;
+    margin: 0 0% 0px 0;
+    text-align: center;
+  }
+
+  #details li {
+    list-style: none;
+    font-weight: 400em;
+    margin-bottom: 1vh;
+  }
+  #name {
+    font-size: 1.5em;
+    color: rgb(187, 26, 26);
+  }
+  .container {
+    margin: 0;
+  }
+
+  .title {
+  font-size: 1.2rem;
+
+}
+  .project:hover {
+    padding: 3px;
+    transform: unset;
+    box-shadow: 1px 3px 5px 2px black;
+    background-color: aliceblue;
+    z-index: 2;
+  }
+}
+
+@media all and (max-width: 300px){
+  .container {
+
+    border: 0px solid black;
+  }
+} ;
